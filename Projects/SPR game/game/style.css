@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+h1{
+    background-color:rgb(26, 26, 82);
+    color:#fff;
+    height:5rem;
+    line-height:5rem;
+}
+
+img{
+    height:200px;
+    width:200px; 
+    /* object-fit:contain; */
+    border-radius:50%;
+}
+
+img:hover{
+    cursor:pointer;
+    border:3px solid rgb(26, 26, 82);
+    box-shadow:0 0 5px red;
+}
+
+.choices{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:3rem;
+    margin-top:4rem;
+}
+
+.score-board{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    gap:3rem;
+    margin-top:3rem;
+}
+
+#user-score, #com-score{
+    font-size:20px;
+}
+
+.msg-container{
+    margin-top:5rem;
+}
+#msg{
+    background-color:rgb(26, 26, 82);
+    color:#fff;
+    font-size:20px;
+    line-height:2rem;
+    display:inline;
+    padding:1.4rem;
+    border-radius:20px;
+}
+
+@media (max-width: 1024px) {
+   body{
+    margin-left:-230px;
+   }
+  }
+  
+  @media (max-width: 768px) {
+    img{
+        height:100px;
+        width:100px; 
+        /* object-fit:contain; */
+        border-radius:50%;
+    }
+    img:hover{
+        cursor:pointer;
+        border:1.5px solid rgb(26, 26, 82);
+        box-shadow:0 0 5px red;
+    }
+    .score-board p{
+        font-size:18px;
+    }
+    .msg-container{
+        margin-top:3rem;
+    }
+    #msg{
+        background-color:rgb(26, 26, 82);
+        color:#fff;
+        font-size:18px;
+        line-height:1rem;
+        display:inline;
+        padding:1rem;
+        border-radius:20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    body{
+        margin-right:-190px;
+    }
+    h1{
+        font-size:25px;
+    }
+    img{
+        height:90px;
+        width:90px; 
+        /* object-fit:contain; */
+        border-radius:50%;
+    }
+    img:hover{
+        cursor:pointer;
+        border:1.3px solid rgb(26, 26, 82);
+        box-shadow:0 0 5px red;
+    }
+    .score-board p{
+        font-size:15px;
+    }
+    .msg-container{
+        margin-top:3rem;
+    }
+    #msg{
+        background-color:rgb(26, 26, 82);
+        color:#fff;
+        font-size:16px;
+        line-height:1rem;
+        display:inline;
+        padding:0.8rem;
+        border-radius:20px;
+    }
+  }

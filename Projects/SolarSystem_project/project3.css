@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:black;
+    overflow:hidden;
+}
+
+.container{
+    /* margin-top:10px; */
+    font-size:10px;
+    width:10em;
+    height:10em;
+    margin-left:-400px;
+    margin-bottom:300px;
+    position:relative;
+}
+
+.sun{
+    position:relative;
+    top:15em;
+    left:15em;
+    width:15em;
+    height:15em;
+    background-color:yellow;
+    background-image: radial-gradient(orange, yellow);
+    border-radius:50%;
+    box-shadow: 0 0 2rem white;
+}
+
+.earth, .moon, .mars{
+    position:absolute;
+    border-style: solid;
+    border-color: white transparent transparent  transparent;
+    border-width:0.2em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth{
+    top:5em;
+    left: 5em;
+    width:35em;
+    height:35em;
+    animation:orbit 26.5s linear infinite;
+}
+
+.moon{
+    top:0;
+    right:0;
+    width:13em;
+    height:13em;
+    animation:orbit 5s linear infinite;
+}
+
+.mars{
+    width:55em;
+    height:55em;
+    border-style:solid;
+    border-color:white transparent transparent;
+    border-width:0.3em 0.2em 0.1em 0;
+    border-radius:50%;
+    position:absolute;
+    top:2rem;
+    left:-5em;
+    top:-3em;
+    animation:orbit 30.5s linear infinite;
+}
+
+.jupiter{
+    width:80em;
+    height:80em;
+    border-style:solid;
+    border-color:white transparent transparent transparent;
+    border-width:0.3em 0.2em 0.1em 0;
+    border-radius:50%;
+    position:absolute;
+    left:-15em;
+    top:-15em;
+    bottom:-100em;
+    right:2em;
+    animation:orbit 50.5s linear infinite;
+    /* box-shadow: 0 0 1px white; */
+}
+.earth::before,
+.moon::before,
+.mars::before, 
+.jupiter::before{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+}
+
+.earth::before{
+    top:4em;
+    right:3em;
+    width:5em;
+    height:5em;
+    background-color:aqua;
+    background-image:radial-gradient(rgb(102, 102, 235), rgb(59, 242, 248));
+}
+
+.moon::before{
+    top:1em;
+    right:0.3em;
+    width:2.5em;
+    height:2.5em;
+    background-color:silver;
+    background-image:radial-gradient(silver, white);
+}
+
+.mars::before{
+    top:7.5em;
+    right:3.5em;
+    width:7em;
+    height:7em;
+    background-color:rgb(236, 202, 48);
+    background-image:radial-gradient(rgb(238, 91, 47), rgb(247, 148, 19));
+}
+
+.jupiter::before{
+    top:5.5em;
+    right:8em;
+    width:12em;
+    height:12em;
+    background-color:rgb(236, 202, 48);
+    background-image:linear-gradient(rgb(240, 199, 17), rgb(231, 148, 39));
+}
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        margin-top:-100px;
+        margin-left:-560px;
+    }
+   }
+   
+   @media (max-width: 768px) {
+    .container{
+        margin-top:-100px;
+    }
+   }
+   
+   @media (max-width: 640px) {
+     .container{
+        margin-top:-100px;
+     }
+
+   }
