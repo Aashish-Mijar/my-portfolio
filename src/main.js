@@ -1,4 +1,4 @@
-import '../style.css';
+import './style.css';
 import Scene3D from './js/3dScene.js';
 import Animations from './js/animations.js';
 import Navigation from './js/navigation.js';

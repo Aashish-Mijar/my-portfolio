@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-
 export default class Scene3D {
   constructor(container) {
     // Setup
@@ -175,7 +174,7 @@ export default class Scene3D {
       'Img_3D/img3.jpeg',
       'Img_3D/img4.jpeg',
       'Img_3D/img5.jpeg',
-      'Img_3D/img6.jpeg' // Need at least 6 images for cube faces
+      'Img_3D/img9.jpeg' // Need at least 6 images for cube faces
     ];
   
     const textureLoader = new THREE.TextureLoader();
